@@ -153,6 +153,7 @@ class ReactMPV extends React.PureComponent {
 
   _postData(type, data) {
     const msg = {type, data};
+    console.log(JSON.stringify(msg))
     this.node().postMessage(msg);
   }
   _handleMessage(e) {
