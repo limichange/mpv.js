@@ -2,7 +2,7 @@
 
 const path = require("path");
 const {BrowserWindow, app} = require("electron");
-const {getPluginEntry} = require("../index");
+const getPluginEntry = require("./getPluginEntry")
 require("electron-debug")();
 
 const pdir = path.join(__dirname, "..", "build", "Release");
